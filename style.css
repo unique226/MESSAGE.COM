@@ -1,0 +1,63 @@
+#input1{
+    height: 30px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left:70px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px blueviolet,0 0 5px blueviolet;
+}
+#MESSAGE{
+    width: 164px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px blueviolet,0 0 5px blueviolet;
+    margin-left: 70px;
+    height:80px;
+    border: none;
+    border-radius: 3px;
+}
+#MESSAGE:focus,#input1:focus{
+    background: linear-gradient(45deg,rgb(68, 145, 246),rgb(132, 0, 255));
+    width: 190px;
+    transition: 1s;
+    margin-left: 57px;
+}
+#MESSAGE::placeholder,#input1::placeholder{
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+#div1{
+
+    margin: 100px;
+    border: none;
+   height: 200px;
+    width: 300px;
+    box-shadow: 0 0 5px rgba(0,0,3);
+}
+#button1{
+    width: 100px;
+    margin-left: 100px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 0 1px black;
+    background: rgb(104, 179, 250);
+    border-radius: 2px;
+}
+#div2{
+     margin: 100px;
+    border: none;
+   height: 200px;
+    width: max-content;
+    max-width: 400px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0,0,3);
+}
+#span2{
+    text-transform: uppercase;
+}

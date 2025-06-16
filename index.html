@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-div">
+        <div id="div1">
+            <input type="text" id="input1" placeholder="NAME OF THE USER">
+           <br>
+           <textarea  id="MESSAGE" rows="3" cols="3" autocomplete="additional-name" placeholder="TYPE SOMETHING" maxlength="60"></textarea>
+           <br><br>
+           <button id="button1">SEND</button>
+        </div>
+    </div>
+</body>
+<script>
+    var input1=document.getElementById('input1');
+    var div1=document.getElementById('div1');
+    var button1=document.getElementById('button1');
+    var MESSAGE=document.getElementById('MESSAGE');
+
+
+
+    button1.addEventListener('click',function(){
+        if(input1.value.length<4){
+            alert('NAME MUST BE 4')
+
+        }
+        else if( MESSAGE.value.length<10){
+            alert('MESSAGE MUST BE MORE 10 UPTO 60')
+        }
+        else{
+            button1.style.background='green';
+            setTimeout(()=>{
+                localStorage.setItem('message',MESSAGE.value);
+                window.location.href='success.html';
+            },1000);
+        }
+    })
+</script>
+</html>
